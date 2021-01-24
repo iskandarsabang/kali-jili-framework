@@ -3,7 +3,7 @@
 <head>
 	<title>SELAMAT DATANG</title>
 </head>
-<body style="font-family: arial;">
+<body style="font-family: arial; text-align: center">
 	<br><br><br><br><br><br><br><br>
 	<h2 align="center" style="font-size: 50px;color: blue;">SELAMAT DATANG</h2>
 	<h1 align="center" style="font-size: 65px;color: salmon;">FRAMEWORK KAJILI-JILI</h1>
@@ -19,7 +19,8 @@
 		<a href="https://youtube.com/playlist?list=PLQRBmfCxglK2yoarSZfc6cP03CJZLn-_l">ERP - Pertemuan 04-05</a>
 		<a href="https://youtube.com/playlist?list=PLQRBmfCxglK2Iv2-hBNvx3HNEMqg1UkFF">ERP - Pertemuan 06</a>
 		<a href="https://youtube.com/playlist?list=PLQRBmfCxglK0ki_f5tnLHhL3dTkp5rJZS">ERP - Pertemuan 09-10</a>
+	</p> <br>
 
-	</p>
+	<a href="https://github.com/iskandarsabang/kali-jili-framework.git">Download</a>
 </body>
 </html>
