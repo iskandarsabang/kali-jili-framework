@@ -1,0 +1,23 @@
+Options -Multiviews
+php_value date.timezone 'Asia/Jakarta'
+##Options -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+##================================
+## Menjadikan url yang dikunjungi sebagai nilai 'control_metode_data' yang nantinya akan diGET 
+## dengan cara menulis ulang nilai control_metode_data.
+##================================
+## contoh, jika mengunjungi alamat http://project_01/a/b maka
+## Rewrite akan mengganti alamat dikunjungi menjadi http://project_01/index.php?add=a/b
+## Nantinya, class aplikasiku (lihat my_root.php yang ada di folder inti) 
+## akan memposisi a sebagai class controller, b sebagai method yang ada dalam a.
+##================================
+## Jika yang dikunjungi adalah alamat http://project_01/a/b/x/y maka akan dilakukan
+## rewrite, http://project_01/index.php?add=a/b/x/y
+## a dianggap sebagai controller, b dianggap sebagai metode dalam a, dan x,y dianggap sebagai
+## data yang menjadi masukan bagi metode b
+
+RewriteRule ^(.*)$ index.php?control_metode_data=$1 [L]
